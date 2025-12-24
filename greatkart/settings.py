@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
+    # 'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
@@ -154,3 +156,8 @@ EMAIL_HOST_PASSWORD = 'hvkqacdnzgrtuunm'
 EMAIL_USE_TLS = True
 
 
+# PAYPAL_TEST = True
+# PAYPAL_RECEIVER = 
+
+#-------------------PAYPAL SETTINGS--------------------------------#
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
